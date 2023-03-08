@@ -7,7 +7,7 @@ pages:
     name: cirocosta/alpine-envsubst:latest
     entrypoint: [""]
   variables:
-    DOCSIFY_BASE_PATH: https://backlogic.gitlab.io/-/web/documentation/docs
+    DOCSIFY_BASE_PATH: https://backlogic.gitlab.io/web/documentation/docs
     docsify: $docsify
   stage: deploy
   script:
