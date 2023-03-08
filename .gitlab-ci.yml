@@ -7,7 +7,7 @@ pages:
     name: cirocosta/alpine-envsubst:latest
     entrypoint: [""]
   variables:
-    DOCSIFY_BASE_PATH: https://backlogic.gitlab.io/-/web/docsify/docs
+    DOCSIFY_BASE_PATH: https://backlogic.gitlab.io/-/web/documentation/docs
     docsify: $docsify
   stage: deploy
   script:
@@ -27,7 +27,7 @@ pages:
 "Create Preview Environment":
   extends: pages
   variables:
-    DOCSIFY_BASE_PATH: https://backlogic.gitlab.io/-/web/docsify/-/jobs/$CI_JOB_ID/artifacts/public/docs
+    DOCSIFY_BASE_PATH: https://backlogic.gitlab.io/-/web/documentation/-/jobs/$CI_JOB_ID/artifacts/public/docs
   script:
     - mkdir .public
     - envsubst < "index.html" > ".index.html"
