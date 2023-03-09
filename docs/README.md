@@ -9,7 +9,7 @@ Data access service (DAS) is a cross-platform data access layer technology for r
 - It provides developer the flexibility of retrieving relational data in any shape and persisting object of any complexity as the application needs. No more comprise on either object or data model; and
 - It provides developer a streamlined SQL-centric approach, where the focus of data access development is on SQL development, the cumbersome object-relational transformation is abstracted away, and the tedious data mapping is largely automated.
 
-In addition, it tends the need of serverless functions and microservice applications for light-weight data access layer and the problem of them with connection pooling, and provide a way to externalize data access logic and to pool database connections across applications at the same time.
+In addition, it tends the need of serverless functions and microservice applications for light-weight data access layer, solves the problem of them with connection pooling, and provide a way to externalize data access logic and to pool database connections across applications.
 
 ## Philosophy
 
