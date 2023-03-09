@@ -6,10 +6,10 @@
 ## What It Is
 
 Data access service (DAS) is a cross-platform data access layer technology for relational database. It beats the traditional ORM, raw SQL and query builder technologies in that:
-- It provides developer the flexibility of retrieving relational data in any shape and persisting object of any complexity as the application needs. No more comprise on either object or data model; and
-- It provides developer a streamlined SQL-centric approach, where the focus of data access development is on SQL development, the cumbersome object-relational transformation is abstracted away, and the tedious data mapping is largely automated.
+- It provides developer the flexibility of retrieving relational data in any shape and persisting object of any complexity according to application needs. No more comprise on either object or data model; and
+- It provides developer a streamlined SQL-centric approach, where the focus of data access development is on developing SQLs, the cumbersome object-relational transformation is abstracted away, and the tedious data mapping is largely automated.
 
-In addition, it tends the need of serverless functions and microservice applications for light-weight data access layer, solves the problem of them with connection pooling, and provide a way to externalize data access logic and to pool database connections across applications.
+In addition, it addresses the need of serverless functions and microservice applications for light-weight data access layer, solves the problem of them with connection pooling, and provides a way to externalize data access logic and to pool database connections across applications.
 
 ## Philosophy
 
@@ -72,7 +72,7 @@ The developer should not hand-code these data binding components from scratch, b
 
 ## Sample
 
-The following are sample query, SQL and CRUD services for illustration purpose. They are specified with SQL and plain JSON.
+The following are sample query, SQL and CRUD services for illustration purpose. They are specified with plain SQL and JSON.
 
 <!-- tabs:start -->
 #### **Query Service**
@@ -310,9 +310,9 @@ The following shows the column bindings for `orders` table, abbreviated for brev
 
 ## Target
 
-DAS sits between the database and the client application that needs data access. The primary target of DAS is serverless functions and microservice applications, which stand to profit the most from externalizing data access layer. The second target of DAS is front applications, Angular application for example, that like to hold light business logic in front and access database directly. Lastly, DAS can help any applications that like to defer data access logic to a backend service and take advantage of the simplicity and performance of data access services. 
+DAS sits between the database and the client application that needs data access. The primary target of DAS is serverless function and microservice application, which stand to profit the most from externalizing data access layer. The second target of DAS is front application, Angular application for example, that likes to hold light business logic in front and access database directly. Lastly, DAS can help any application that likes to defer data access logic to a backend service and take advantage of the simplicity and performance of data access services. 
 
-As DAS is deployed as HTTP API, it is a cross-platform solution for client applications implemented with all languages, as long as it can send HTTP request. However, DAS does have specialized data access client planned for Java, TypeScript and Python, to further simplify data access in these languages.
+As DAS is deployed as HTTP API, it is a cross-platform solution for client applications authored with all languages, as long as it can send HTTP request. However, DAS does have specialized data access client planned for Java, TypeScript and Python, to further simplify data access in these languages.
 
 ## Service Builder
 
@@ -330,7 +330,7 @@ DAS has `Service Builder` as the tool for data access service development. It is
 
 ## Runtime Instance
 
-The runtime `Data Access Server` instance is meant to be launched in user VPC, close to the database, with cloud services like AWS AppRunner, ECS Fargate etc., as managed service. Then a multitude of data access applications can be deployed on the instance to provide data access services to serverless functions, microservice applications, front applications and monolithic applications in the cloud. If the databases for the applications are hosted on the same database server, the database connections can be pooled for these applications.
+The runtime `Data Access Server` instance is meant to be launched in user VPC, close to the runtime database, with cloud services like AWS AppRunner, ECS Fargate etc., as managed service. Then a multitude of data access applications can be deployed on the instance to provide data access services to serverless functions, microservice applications, front applications and monolithic applications in the cloud. If the databases for the applications are hosted on the same database server, the database connections can be pooled across these applications.
 
 ---
 
