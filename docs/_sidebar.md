@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-- [**Data Access Service**](/data-access-service)
+- [**Data Access Service**](/#data-access-service)
 
 - Get Started
     - [Service Builder](/GetStarted/getStartedWithServiceBuilder.md "Get Started with Service Builder")

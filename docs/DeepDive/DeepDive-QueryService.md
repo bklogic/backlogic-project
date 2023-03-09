@@ -130,11 +130,11 @@ The data fields in the input and output JSON strings can be a number, a string, 
 
 The output can include complex object and array structures, totally based on the needs of the application. More importantly, it is independent of the data model in the data source. In our example, the output includes an `address` structure inside `customer`. However, the data fields of both `address` and `customer` are from the `customers` table, as you may see later from the SQL query. 
 
-The input and output of the query service defines a contract between the query service and the client application. They are normal dictated by the need of the client application or agreed between the query service and the client application, prior to the service development. If the developer is responsible for development of both the query service and the client application, he/she may generate the output JSON from the application class, and thus save the work of developing the output object.
+The input and output of the query service defines a contract between the query service and the client application. They are normally dictated by the need of the client application or agreed between the query service and the client application, prior to the service development. If the developer is responsible for development of both the query service and the client application, he/she may generate the output JSON from the application class, and thus save the work of developing the output object.
 
 ### Query
 
-The SQL query, along with the input and output bindings, is the developer's answer to the query problem. It must return a relational data set with data needed for populating all data fields of the output object/array in a single query by design. Therefore, the query service is expected by very efficient. We will never see the infamous `N+1` trick in query service.
+The SQL query, along with the input and output bindings, is the developer's answer to the query problem. It must return a relational data set with data needed for populating all data fields of the output object/array in a single query by design. Therefore, the query service is expected to be very efficient. We will never see the infamous `N+1` trick in query service.
 
 For our example, we have
 
