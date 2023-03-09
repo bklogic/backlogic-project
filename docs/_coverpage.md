@@ -2,7 +2,7 @@
 
 ![logo](_media/icon_33.png)
 
-# Data Access Service Documentation
+# The ***Data Access Service*** Project
 
 **A cross-platform solution for relational data access in cloud**
 
