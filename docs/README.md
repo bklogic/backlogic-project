@@ -5,15 +5,15 @@
 
 ## What It Is
 
-Data access service (DAS) is a cross-platform data access layer technology for relational data access in cloud. 
+Data access service (DAS) is a cross-platform data access layer technology for relational database. It beats the traditional ORM, raw SQL and query builder technologies in that:
+- It provides developer the flexibility of retrieving relational data in any shape and persisting object of any complexity as the application needs. No more comprise on either object or data model; and
+- It provides developer a streamlined SQL-centric approach, where the focus of data access development is on SQL development, the cumbersome object-relational transformation is abstracted away, and the tedious data mapping is largely automated.
 
-Firstly, it provides developer the flexibility to retrieve relational data in any shape that the application needs, and 
-
-It solves the problem of querying and persisting of complex objects. It also champions the idea of externalizing data access logic and of SQL-centric data access development. It is a data access solution targeting DDD aggregates, serverless functions, microservices and any applications that need to access relational database hosted in cloud.
+In addition, it tends the need of serverless functions and microservice applications for light-weight data access layer and the problem of them with connection pooling, and provide a way to externalize data access logic and to pool database connections across applications at the same time.
 
 ## Philosophy
 
-DAS follows a different philosophy from traditional ORM, raw SQL and query builder technologies, and is driven by a handful principles, including separation, decoupling, abstraction and automation.
+DAS follows a different philosophy from traditional ORM, raw SQL and query builder technologies, and is driven by a number of principles, including separation, decoupling, abstraction and automation.
 
 ### Separation <!-- {docsify-ignore} -->
 
