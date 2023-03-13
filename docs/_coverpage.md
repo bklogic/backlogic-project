@@ -10,8 +10,8 @@
 - Designed for complex objects
 - Built for cloud
 
-[GitHub](https://github.com/bklogic/ServiceBuilder)
-[Get Started](/DataAccessService)
+[GitHub](https://github.com/bklogic/data-access-service)
+[Get Started](/#data-access-service)
 
 <!-- background image -->
 <!-- ![](_media/bg.jpg) -->
