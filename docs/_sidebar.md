@@ -1,5 +1,7 @@
 <!-- docs/_sidebar.md -->
-- [**Data Access Service**](/#data-access-service)
+- Introduction
+    - [Data Access Service](/#data-access-service)
+    - [BackLogic Project](/project)
 
 - Get Started
     - [Service Builder](/GetStarted/getStartedWithServiceBuilder.md "Get Started with Service Builder")
@@ -10,6 +12,5 @@
     - [SQL Service](/DeepDive/DeepDive-SQLService.md)
     - [CRUD Service](/DeepDive/DeepDive-CRUDService.md)
 
-
-- [**Reference Guide**](/guide/guide.md)
-
+- User Guide
+    - [Reference Guide](/guide/guide.md)

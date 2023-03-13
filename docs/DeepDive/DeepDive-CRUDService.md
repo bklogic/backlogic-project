@@ -320,7 +320,7 @@ The `insert value` and `update value` shall be a SQL expression, like the `inser
 ## Examples
 ---
 
-The examples in this tutorial demonstrates what we can do with CRUD and how we could do it. The sample MySQL database used for the examples is the [`classicmodels`](https://www.mysqltutorial.org/mysql-sample-database.aspx). The source code for these example query services can be found [here](https://www.mysqltutorial.org/mysql-sample-database.aspx).
+The examples in this tutorial demonstrates what we can do with CRUD and how we could do it. The sample MySQL database used for the examples is the [`classicmodels`](https://www.mysqltutorial.org/mysql-sample-database.aspx). The source code for these example CRUD services can be found [here](https://github.com/bklogic/data-access-service-example).
 
 For the seek of brevity, the input and output bindings are omitted from presentations of all examples.
 
@@ -437,7 +437,7 @@ Repository for `Customer`. A CRUD service for a structured object mapped to a si
 {
     "customerNumber": 1,
     "city": "Los Angeles",
-    "postalCode": "90001"
+    "postalCode": "83030"
 }
 ```
 
@@ -634,9 +634,9 @@ Repository for `Order`. A CRUD service for object with array structure, featurin
 ```json
 {
     "orderNumber": 1,
-    "customerNumber": 3,
-    "startDate": "2020-12-01T00:00:00.000",
-    "endDate": "2020-12-31T00:00:00.000"
+    "customerNumber": 103,
+    "startDate": "2004-12-01T00:00:00.000",
+    "endDate": "2004-12-31T00:00:00.000"
 }
 ```
 
@@ -728,7 +728,7 @@ Repository for OfficeAggregate. A CRUD service for a complex object.
 
 ```json
 {
-    "officeCode": "1",
+    "officeCode": "100",
     "name": "San Francisco",
     "address": {
         "city": "San Francisco",
@@ -941,6 +941,4 @@ This column is not mapped to any data field. However, it will be automatically p
 ## Conclusion
 ---
 
-SQL service may be used to create repository for simple object mapped to a single table to complex object to many tables, with or without read-write asymmetry. The key of the CRUD service development is in writing the SQL query for read. Then the `write` component can be generated from the `read` component and edited by the developer.  
-
-
+CRUD service may be used to create repository for simple object mapped to a single table to complex object mapped to many tables, with or without read-write asymmetry. The key of the CRUD service development is in writing the SQL query for read. Then the `write` component can be generated from the `read` component and edited by the developer.  

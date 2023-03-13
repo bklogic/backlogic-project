@@ -40,6 +40,8 @@ Completion of `Getting Started with Service Builder`.
 
     The input for this service contains the single query parameter: `state`.
 
+> Tip: use Ctrl + S to save file and Ctrl + W to close file.
+
 3. **Specify Output**
     - Open `output.json` file
     - Type or paste:
@@ -252,7 +254,7 @@ The input and output defines the query problem to solve; the query, together wit
 8. Test Service
     - From `Tests` bar, click `Add Test` icon ![Alt](./dark/add.svg "Add Test"), to generate a test file;
 
-    ![test-UpdateCustomerAddress](./images/test-UpdateCustomerAddress.png)
+    ![test-UpdateCustomerAddress](./images/test-updateCustomerAddress.png)
 
     - Open `testUpdateCustomerAddress.json`, and edit the input;
 
@@ -561,6 +563,8 @@ SQL service is a command service. The focus is on the commands making database c
         ```
 
     - click `Run Test` ![Alt](./dark/play.svg "Run Test") button at upper-right corner to test the service. The order is deleted from the database.
+
+    > The `input` of `delete test` is copied from `input` of the `read` component. It needs to be cleaned up to have the `key fields` only.
 
 ### Takeaway
 

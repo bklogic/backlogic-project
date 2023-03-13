@@ -43,7 +43,8 @@
   <script>
     window.$docsify = {
       name: 'Home',
-      nameLink: '/data-access-service/',
+      // nameLink: '/data-access-service/',
+      nameLink: (window.location.hostname === 'localhost') ? '/' : '/data-access-service/',
       repo: '',
       auto2top: true,
       loadSidebar: true,

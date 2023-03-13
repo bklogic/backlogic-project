@@ -246,7 +246,7 @@ for testing the SQL service `cloneProductLine`.  The test may run with or withou
 ## Examples
 ---
 
-The examples in this tutorial demonstrates what we can do with SQL service and how we could do it. The sample MySQL database used for the examples is the [`classicmodels`](https://www.mysqltutorial.org/mysql-sample-database.aspx) database for `MySQL Tutorial`. The source code for these example query services can be found [here](https://www.mysqltutorial.org/mysql-sample-database.aspx).
+The examples in this tutorial demonstrates what we can do with SQL service and how we could do it. The sample MySQL database used for the examples is the [`classicmodels`](https://www.mysqltutorial.org/mysql-sample-database.aspx) database for `MySQL Tutorial`. The source code for these example SQL services can be found [here](https://github.com/bklogic/data-access-service-example).
 
 ### Example #1 - updateInventoryForProduct
 
@@ -695,10 +695,12 @@ There are mixed DDL and DML statements for this SQL service. We also see a subst
 ``` 
 
 ## DDL and Substitution Variable
+---
 
 As we have already seen from the examples above, SQL service supports DDL and substitution variable in DDL. The substitution variable is disallowed by default. To enable substitution variable, we need to change the `variableLength` property in the `service.json` file to a number larger then zero. SQL service limits the length of the substitution value, to minimize the risk of SQL injection. The max value for `variableLength` is 100.
 
 ## Batch Input
+---
 
 SQL service supports batch input, meaning that we can invoke a SQL service with an array of input objects. Let's look an example. 
 
@@ -751,16 +753,18 @@ We normal call this service with an input for one product:
 
 but we can also call this service with an array of inputs for multiple products:
 
+```json
 [
     {
-        "productCode": "S10_4757",
-        "quantityInStock": 100
+        "productCode": "S10_1678",
+        "qtyToAdd": 1000
     },
     {
-        "productCode": "S12_3148",
-        "quantityInStock": 200
+        "productCode": "S10_1949",
+        "qtyToAdd": 800
     }
 ]
+```
 
 In this case, the `sqls` will be executed once for each input in the array, and the `query` will be executed only once at the end of service.
 

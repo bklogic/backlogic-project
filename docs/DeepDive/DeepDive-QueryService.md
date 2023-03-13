@@ -222,7 +222,7 @@ For dynamic query service, multiple tests may be added, one for each of the supp
 ## Examples
 ---
 
-The examples in this tutorial demonstrates what we can do with query service and how we could do it. The sample MySQL database used for the examples is the [`classicmodels`](https://www.mysqltutorial.org/mysql-sample-database.aspx) database for `MySQL Tutorial`. The source code for these example query services can be found [here](https://www.mysqltutorial.org/mysql-sample-database.aspx).
+The examples in this tutorial demonstrates what we can do with query service and how we could do it. The sample MySQL database used for the examples is the [`classicmodels`](https://www.mysqltutorial.org/mysql-sample-database.aspx) database for `MySQL Tutorial`. The source code for these example query services can be found [here](https://github.com/bklogic/data-access-service-example).
 
 ### Example #1 - getInventoryForProduct
 
@@ -507,7 +507,7 @@ To get an `order` object by orderNumber. A query service that returns an object 
 
 ```json
 {
-    "orderNumber": 123
+    "orderNumber": 10103
 }
 ```
 
@@ -520,7 +520,7 @@ To get an `order` object by orderNumber. A query service that returns an object 
     "customer": {
         "customerNumber": 1,
         "customerName": "Signal Gift Stores",
-        "icon": "base64YmFzZTY0ZXhhbXBsZQ=="
+        "icon": "base64YmFzZTY0ZXhhbXBsZQ==",
         "address": {
             "addressLine1": "8489 Strong St.",
             "addressLine2": "",
@@ -943,7 +943,7 @@ select a.employeeNumber, a.lastName,
        a.firstName, a.jobTitle,
        b.employeeNumber as eEmployeeNumber, b.lastName as eLastName, 
        b.firstName as eFirstName, b.jobTitle as eJobTitle,
-       c.employeeNumber as cEmployeeNumber, c.lastName as cLastName, 
+       c.employeeNumber as eeEmployeeNumber, c.lastName as eeLastName, 
        c.firstName as eeFirstName, c.jobTitle as eeJobTitle,
        d.employeeNumber as eeeEmployeeNumber, d.lastName as eeeLastName, 
        d.firstName as eeeFirstName, d.jobTitle as eeeJobTitle,
@@ -955,7 +955,7 @@ select a.employeeNumber, a.lastName,
   left join employees d on c.employeeNumber = d.reportsTo
   left join employees e on d.employeeNumber = e.reportsTo
  where a.reportsTo is null
-```
+ ```
 
 #### Input and Output Bindings
 
@@ -1092,8 +1092,8 @@ In the case of `getCustomersByCityOrPostalCode`, assume that we have
 
 ```json
 {
-    "city": "Los Angeles",
-    "postalCode": "90001"
+    "city": "San Francisco",
+    "postalCode": "91003"
 }
 ```
 
@@ -1125,7 +1125,7 @@ If we call the service with an input like:
 
 ```json
 {
-    "city": "Los Angeles"
+    "city": "San Francisco",
 }
 ```
 
@@ -1144,7 +1144,7 @@ Similarly, if instead we call the service with an input like:
 
 ```json
 {
-    "postalCode": "90001"
+    "postalCode": "91003"
 }
 ```
 
