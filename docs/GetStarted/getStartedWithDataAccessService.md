@@ -614,5 +614,5 @@ In this tutorial, we have shown you how to create a query, SQL and CRUD service,
 
 ## What Is Next
 
-Move on [Data Access Service Deep Dives](/docs/DeepDive/DeepDive-QueryService.md) for a deeper understanding of data access service.
+Move on [Data Access Service Deep Dives](/DeepDive/DeepDive-QueryService.md) for a deeper understanding of data access service.
 

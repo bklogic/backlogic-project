@@ -11,7 +11,7 @@
 - Built for cloud
 
 [GitHub](https://github.com/bklogic/ServiceBuilder)
-[Get Started](#data-access-service)
+[Get Started](/DataAccessService)
 
 <!-- background image -->
 <!-- ![](_media/bg.jpg) -->

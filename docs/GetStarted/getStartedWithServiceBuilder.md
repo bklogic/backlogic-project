@@ -279,5 +279,5 @@ as the deployment inspection process.
 ## What Is Next
 ---
 
-Move on to [Get Started with Data Access Services](/docs/GetStarted/getStartedWithDataAccessService.md).
+Move on to [Get Started with Data Access Services](/GetStarted/getStartedWithDataAccessService.md).
 

@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 - Introduction
-    - [Data Access Service](/#data-access-service)
+    - [Data Access Service](/DataAccessService)
     - [BackLogic Project](/project)
 
 - Get Started
