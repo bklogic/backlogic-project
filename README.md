@@ -11,11 +11,23 @@ Data access service is a cross-platform data access solution for relational data
 
 So that the developer can have the comfort to compose SQL in a database-centric environment and the flexibility to query and persist objects of any shape and complexity.
 
-Data access service provides data access logic as backing service to the application. For serverless and microservice application, it additionally provides connection pooling as an service.
+Data access service provides data access logic as a backing service to the application. For serverless and microservices application, it additionally provides connection pooling as a service.
+
+### Get Started
+
+- Get Started Tutorials:
+    - Get started with Service Builder
+    - Get Started with Data Access Service
+- Data Access Deep Dives
+    - Query service
+    - SQL service
+    - CRUD service
+- Develop and deploy your own application in `DEV` workspace
+- Deploy your own application onto Service Runtime
 
 ### Examples
 
-An example data access application showcasing the various simple and complex query, command and repository services:
+An example data access application showcasing the various simple and complex query, command (aka SQL) and repository (aka CRUD) services:
 
 https://github.com/bklogic/data-access-service-example
 
@@ -69,11 +81,11 @@ For pure Java user:
 https://github.com/bklogic/java-data-access-client
 
 
-### Website
+## Website
 
 https://www.backlogic.net
 
-### Support
+## Support
 
 GitHub `Discussions` for questions and discussions. GitHub `Issues` for issues and feature requests associated with Service Builder and Runtime.
 
