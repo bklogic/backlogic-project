@@ -15,9 +15,9 @@ Data access service provides data access logic as a backing service to the appli
 
 ### Get Started
 
-- Get Started Tutorials:
-    - Get started with Service Builder
-    - Get Started with Data Access Service
+- Getting Started Tutorials:
+    - Getting started with Service Builder
+    - Getting Started with Data Access Service
 - Data Access Deep Dives
     - Query service
     - SQL service
@@ -88,4 +88,8 @@ https://www.backlogic.net
 ## Support
 
 GitHub `Discussions` for questions and discussions. GitHub `Issues` for issues and feature requests associated with Service Builder and Runtime.
+
+## Feedback
+
+Any feedback on the project is greatly appreciated. Please post it on the `Discussions` board.
 
