@@ -95,22 +95,22 @@ Any feedback on the project is greatly appreciated. Please post it on the `Discu
 
 ## Latest Releases
 
-### Service Builder
+#### Service Builder
 
 V0.2.2
 
-### Service Builder Backend
+#### Service Builder Backend
 
 V1.3.0
 
-### Service Runtime
+#### Service Runtime
 
 V1.3.0
 
-### Java Data Access Client
+#### Java Data Access Client
 
 V0.1.6
 
-### Jdac Spring Boot Starter
+#### Jdac Spring Boot Starter
 
 V0.1.7
