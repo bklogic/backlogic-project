@@ -93,3 +93,24 @@ GitHub `Discussions` for questions and discussions. GitHub `Issues` for issues a
 
 Any feedback on the project is greatly appreciated. Please post it on the `Discussions` board.
 
+## Latest Releases
+
+### Service Builder
+
+V0.2.2
+
+### Service Builder Backend
+
+V1.3.0
+
+### Service Runtime
+
+V1.3.0
+
+### Java Data Access Client
+
+V0.1.6
+
+### Jdac Spring Boot Starter
+
+V0.1.7
