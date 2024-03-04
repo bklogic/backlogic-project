@@ -3,8 +3,9 @@ The BackLogic Free Use License
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this Docker image and associated documentation files (the "Software"), 
 to use the Software for their own purposes without restriction, including the 
-right to run and use the Software, subject to the following 
-restrictions:
+right to run the Software.
+
+Restrictions:
 
 1. You may not modify, adapt, or create derivative works of the Software.
 
@@ -19,7 +20,7 @@ restrictions:
    third parties, including but not limited to running the Software as a service
    or hosting it on a server accessible to third parties.
 
-2. Any use of the Software beyond the scope of free use as defined in this license
+5. Any use of the Software beyond the scope of free use as defined in this license
    is strictly prohibited.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
